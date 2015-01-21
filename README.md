@@ -1,6 +1,5 @@
-# pain_chart
 
-Toy website with an implementation of the Wong-Baker pain chart drawn with Canvas. This is just something I threw together to check out drawing with Canvas. I did everthing the hard and tedious way. 
+Toy website with an implementation of the Wong-Baker pain chart. I did everthing the hard and tedious way. 
 
 [The website is live](https://ea0eaa22de669df91c9534893cbf78e2de274654-www.googledrive.com/host/0B9AtPXmoEFUzUFczMUNyTGFZclk/final/), being hosted by Google Drive and run by ShiftEdit. Total hosting costs: $0.00. 
 
