@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Wong-Baker Pain Scale
+	</title>
+	<script src="images.js" type="text/javascript"></script>
+</head>
+<body>
+<h1 style="position: absolute; left: 200px;">Pain Measurement Scale</h1><br><br><br><br>
+<p>This chart is modeled off of the Wong-Baker <b>FACES</b> Pain Rating Scale.</p>
+<p> It is used by physicians to get pain assessments from children and adults.</p>
+<br>
+
+<br>
+<p>Inspiration: Hockenberry MJ, Wilson D: Wong’s Essentials of Pediatric Nursing, 8th Edition. St. Louis: 2009; Mosby.</p> 
+
+<p>Original chart can be seen <a href="http://www.partnersagainstpain.com/printouts/A7012AS6b.pdf">here</a></p>
+<br>
+
+<p id="num"></p>
+<button style="position: absolute; left: 42px; " onclick="main7()">Doesn't hurt</button>
+<button style="position: absolute; left: 164px; " onclick="main()">Hurts a little</button>
+<button style="position: absolute; left: 271px; " onclick="main3()">Hurts a bit more</button>
+<button style="position: absolute; left: 390px; " onclick="main4()">Hurts even more</button>
+<button style="position: absolute; left: 513px; " onclick="main5()">Hurts whole lot</button>
+<button style="position: absolute; left: 642px; " onclick="main6()">Hurts worst</button>
+<canvas id="box" width="115" height="120"></canvas>
+<canvas id="box2" width="115" height="120"></canvas>
+<canvas id="box3" width="115" height="120"></canvas>
+<canvas id="box4" width="115" height="120"></canvas>
+<canvas id="box5" width="115" height="120"></canvas>
+<canvas id="box6" width="115" height="120"></canvas>
+
+<script>face()</script>
+<script>face2()</script>
+<script>face3()</script>
+<script>face4()</script>
+<script>face5()</script>
+<script>face6()</script>
+
+<canvas id="testPathArc7" width="800" height="75"></canvas>
+<script>main_pain()</script><br>
+<font size="5" style="position: absolute; left: 71px; top: 590px;">0</font>
+<font size="5" style="position: absolute; left: 130px;top: 590px;">1</font>
+<font size="5" style="position: absolute; left: 190px;top: 590px;">2</font>
+<font size="5" style="position: absolute; left: 250px;top: 590px;">3</font>
+<font size="5" style="position: absolute; left: 310px;top: 590px;">4</font>
+<font size="5" style="position: absolute; left: 370px;top: 590px;">5</font>
+<font size="5" style="position: absolute; left: 430px;top: 590px;">6</font>
+<font size="5" style="position: absolute; left: 490px;top: 590px;">7</font>
+<font size="5" style="position: absolute; left: 550px;top: 590px;">8</font>
+<font size="5" style="position: absolute; left: 610px;top: 590px;">9</font>
+<font size="5" style="position: absolute; left: 669px;top: 590px;">10</font>
+
+
+<br>
+
+<canvas style="position: absolute; left: 130px; top: 590px;" id="testPathArc8" width="630" height="440"></canvas>
+
+
+<script>
+	var ctx = canvas.getContext("2d");
+	var canvas = document.getElementById("testPathArc");
+
+	//main();
+	if (!canvas.getContext) {
+		document.write("your browser does not support Canvas.")
+	}
+</script>
+</body>
+</html>
